@@ -1,4 +1,4 @@
-# Names-in-Lights
+# The Children's Text Game for Immature Adults
 A FOSS Parody of the Kindercomp (Commorodore Vic-20) minigame Names in Lights.
 
 This is a test case for future games to be written in Godot Engine. This particular game was designed with GDScript.
