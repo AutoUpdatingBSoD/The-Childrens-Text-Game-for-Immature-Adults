@@ -1,5 +1,11 @@
 # Names-in-Lights
-A FOSS reimagining of the Kindercomp minigame Names in Lights
+A FOSS Parody of the Kindercomp (Commorodore Vic-20) minigame Names in Lights.
+
+This is a test case for future games to be written in Godot Engine. This particular game was designed with GDScript.
+
+To run, just click and run the executable in the releases tab for your operating system. MacOS users may have to install the game as a package.
+
+This game runs on OpenGL Version 3.0 (as per current Godot Engine limitations).
 
 
 Sound Effects Credits:
