@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/245646__unfa__cartoon-pop-distorted.wav-dbafc0d1a854c7971b01c5e1abace8c3.sample"
+
+[deps]
+
+source_file="res://245646__unfa__cartoon-pop-distorted.wav"
+dest_files=[ "res://.import/245646__unfa__cartoon-pop-distorted.wav-dbafc0d1a854c7971b01c5e1abace8c3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

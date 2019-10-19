@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/239900__thesubber13__scream-1-old1.wav-82665378949c57c63fdc94ff140a13ce.sample"
+
+[deps]
+
+source_file="res://239900__thesubber13__scream-1-old1.wav"
+dest_files=[ "res://.import/239900__thesubber13__scream-1-old1.wav-82665378949c57c63fdc94ff140a13ce.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
