@@ -2,7 +2,6 @@ extends Node2D
 
 var flag_raised = true;
 func _ready():
-    OS.window_fullscreen = true;
     #var x = OS.get_real_window_size().x
     #var y = OS.get_real_window_size().y
     #print(x)
@@ -150,6 +149,12 @@ func _input(ev):
         flag_raised = true
     if ev is InputEventKey and ev.scancode == KEY_ESCAPE:
         get_tree().quit()
+    if ev is InputEventKey and ev.scancode == KEY_CONTROL:
+        OS.window_fullscreen = true  
+        yield(get_tree().create_timer(1.0), "timeout")
+    elif ev is InputEventKey and ev.scancode == KEY_ALT:
+        OS.window_fullscreen = false
+        yield(get_tree().create_timer(1.0), "timeout")
 func increase_text(label,text):
     var firstChar = text[0]
     var totalString = text
@@ -158,7 +163,7 @@ func increase_text(label,text):
         #yield(get_tree().create_timer(.001), "timeout")
         label.set_text(totalString)
         #yield(get_tree().create_timer(.001), "timeout")
-        yield(get_tree().create_timer(.001), "timeout")
+        yield(get_tree().create_timer(.0065), "timeout")
     yield(get_tree().create_timer(.001), "timeout")
 
 func swap_text(label,text):
@@ -167,7 +172,7 @@ func swap_text(label,text):
     var tester = label.get_text()
     for i in range(text.length(), 40):
         tester = tester.substr(1, 39) + lastChar 
-        yield(get_tree().create_timer(.001), "timeout")
+        yield(get_tree().create_timer(.0065), "timeout")
         label.set_text(tester)
     #yield(get_tree().create_timer(.010), "timeout")
     yield(get_tree().create_timer(.001), "timeout")
@@ -177,7 +182,7 @@ func decrease_text(label,textLength):
     for i in range(1, 40 - textLength + 1):
         totalString = totalString.substr(0, 40 - i)
         label.set_text(totalString)
-        yield(get_tree().create_timer(.001), "timeout")
+        yield(get_tree().create_timer(.006), "timeout")
 
 func fill_text_left(label, text):
     get_node("ColorRect2/Pop").play()
@@ -186,7 +191,7 @@ func fill_text_left(label, text):
         for j in range (0, text.length()):
             text_so_far = text_so_far + text[j]
             label.set_text(text_so_far)
-            yield(get_tree().create_timer(.0065), "timeout")
+            yield(get_tree().create_timer(.006), "timeout")
             
 func fill_text_right(label, text):
     get_node("ColorRect2/Pop").play()
@@ -195,7 +200,7 @@ func fill_text_right(label, text):
         for j in range (0, text.length()):
             text_so_far = text[j] + text_so_far
             label.set_text(text_so_far)
-            yield(get_tree().create_timer(.0065), "timeout")
+            yield(get_tree().create_timer(.006), "timeout")
 
 func fill_whole_screen(label, text):
     var text_so_far = ""
