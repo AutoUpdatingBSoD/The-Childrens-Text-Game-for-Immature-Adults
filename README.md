@@ -11,6 +11,8 @@ To run, just click and run the executable in the releases tab for your operating
 
 This game runs on OpenGL Version 3.0 (as per current Godot Engine limitations).
 
+Proper fixes to this Game coming soon.
+
 
 Sound Effects Credits:
 - Inappropriate_SFX.wav sounds:
